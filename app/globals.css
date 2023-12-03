@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  @apply bg-b_color_1;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+nav.Navbar-1{/*top level css of navbar */
+  @apply py-4;
+  @apply px-6;
+  @apply flex;
+  @apply items-center;
+  @apply justify-between;
+  @apply mb-5;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+div.Navbar-2-1{/*second level css of navbar for first button */
+  @apply flex;
+  @apply items-center;
+  @apply text-t_color_1;
+}
+div.Navbar-3-1{/* Thrid level of navbar class */
+  @apply text-3xl;
+  @apply hover:text-b_color_2;
+}
+div.Navbar-2-2{/*second level css of navbar for rest of the buttons */
+  @apply flex;
+  @apply items-center;
+  @apply text-t_color_1;
+}
+div.Navbar-3-2{/* Thrid level of navbar class */
+  @apply text-3xl;
+  @apply hover:text-b_color_2;
 }
