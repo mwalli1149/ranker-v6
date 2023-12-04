@@ -31,3 +31,9 @@ div.Navbar-3-2{/* Thrid level of navbar class */
   @apply text-3xl;
   @apply hover:text-b_color_2;
 }
+header{/*header formatting for all files*/
+  text-align: center;
+  @apply text-5xl;
+  @apply font-bold;
+  @apply text-t_color_1;
+}
