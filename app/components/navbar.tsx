@@ -5,7 +5,9 @@ function Navbar() {
     <nav className="Navbar-1">
         <div className='Navbar-2-1'>
             <div className='Navbar-3-1'>
+                <Link href='/'>
                 Home
+                </Link>
             </div>
         </div>
         <div className='Navbar-2-2'>

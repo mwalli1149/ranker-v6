@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs"
-function AuthButton() {
+function AuthGitButton() {
     const supabase = createClientComponentClient();
     const handleSignIn = async () => {
         await supabase.auth.signInWithOAuth({
@@ -13,4 +13,4 @@ function AuthButton() {
   )
 }
 
-export default AuthButton
+export default AuthGitButton

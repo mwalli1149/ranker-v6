@@ -1,10 +1,10 @@
 import React from 'react'
-import AccountFields from '../components/account'
+import AuthGitButton from '../components/auth-button'
 function signUp(){
   return(
     <div>
         <header>Sign Up</header>
-        <AccountFields/>
+        <AuthGitButton/>
     </div>
   )
 }

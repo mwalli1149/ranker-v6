@@ -29,6 +29,7 @@ div.Navbar-2-2{/*second level css of navbar for rest of the buttons */
 }
 div.Navbar-3-2{/* Thrid level of navbar class */
   @apply text-3xl;
+  @apply mr-5;
   @apply hover:text-b_color_2;
 }
 header{/*header formatting for all files*/
