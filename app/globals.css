@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   @apply bg-b_color_1;
 }
-nav.Navbar-1{/*top level css of navbar */
+nav.Navbar-1 {
+  /*top level css of navbar */
   @apply py-4;
   @apply px-6;
   @apply flex;
@@ -13,28 +14,46 @@ nav.Navbar-1{/*top level css of navbar */
   @apply justify-between;
   @apply mb-5;
 }
-div.Navbar-2-1{/*second level css of navbar for first button */
+div.Navbar-2-1 {
+  /*second level css of navbar for first button */
   @apply flex;
   @apply items-center;
   @apply text-t_color_1;
 }
-div.Navbar-3-1{/* Thrid level of navbar class */
+div.Navbar-3-1 {
+  /* Thrid level of navbar class */
   @apply text-3xl;
   @apply hover:text-b_color_2;
 }
-div.Navbar-2-2{/*second level css of navbar for rest of the buttons */
+div.Navbar-2-2 {
+  /*second level css of navbar for rest of the buttons */
   @apply flex;
   @apply items-center;
   @apply text-t_color_1;
 }
-div.Navbar-3-2{/* Thrid level of navbar class */
+div.Navbar-3-2 {
+  /* Thrid level of navbar class */
   @apply text-3xl;
   @apply mr-5;
   @apply hover:text-b_color_2;
 }
-header{/*header formatting for all files*/
+header {
+  /*header formatting for all files*/
+  @apply mt-0;
   text-align: center;
   @apply text-5xl;
   @apply font-bold;
   @apply text-t_color_1;
+}
+h1.home {
+  text-align: center;
+  margin-top: 5px;
+  @apply text-t_color_1;
+  @apply font-semibold;
+  @apply text-3xl;
+}
+ul {
+  margin-left: 25%;
+  @apply text-t_color_1;
+  @apply text-xl;
 }
