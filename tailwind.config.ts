@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         b_color_1: "#0047bb",//rochester blue
-        b_color_2: "grey",
+        b_color_2: "#D8D8D8",
         t_color_1: "white",
       }
     },

@@ -1,12 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
   @apply bg-b_color_1;
 }
 nav.Navbar-1 {
   /*top level css of navbar */
+  font-family: Sarabun;
+  font-weight: bold;
+  @apply bg-b_color_2;
   @apply py-4;
   @apply px-6;
   @apply flex;
@@ -22,8 +25,10 @@ div.Navbar-2-1 {
 }
 div.Navbar-3-1 {
   /* Thrid level of navbar class */
+  
   @apply text-3xl;
   @apply hover:text-b_color_2;
+  @apply hover:bg-white;
 }
 div.Navbar-2-2 {
   /*second level css of navbar for rest of the buttons */
@@ -36,6 +41,7 @@ div.Navbar-3-2 {
   @apply text-3xl;
   @apply mr-5;
   @apply hover:text-b_color_2;
+  @apply hover:bg-white;
 }
 header {
   /*header formatting for all files*/
@@ -56,4 +62,9 @@ ul {
   margin-left: 25%;
   @apply text-t_color_1;
   @apply text-xl;
+}
+@font-face {
+  font-family: 'Sarabun', sans-serif;
+  src: url(https://github.com/mwalli1149/ranker-v6/blob/main/fonts/Sarabun-SemiBold.ttf);
+  font-weight: bold;
 }
