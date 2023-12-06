@@ -1,18 +1,16 @@
-import { Auth } from '@supabase/auth-ui-react'
-import {
-  // Import predefined theme
-  ThemeSupa,
-} from '@supabase/auth-ui-shared'
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+//Not Ready For use experimenting 
+"use client";
+import React from "react";
 
-const supabase = createClientComponentClient();
+const LogIn = () => {
+  return (
+    <div>
+      <label>Username:</label>
+      <input className="test" />
+      <label>Password:</label>
+      <input className="test"/>
+    </div>
+  );
+};
 
-const LogIn = () => (
-  <Auth
-    supabaseClient={supabase}
-
-    appearance={{ theme: ThemeSupa }}
-  />
-)
-
-export default LogIn
+export default LogIn;
