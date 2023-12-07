@@ -63,6 +63,17 @@ ul {
   @apply text-t_color_1;
   @apply text-xl;
 }
+div.sign{
+  margin-left: 25%;
+}
+label.sign{
+  margin-right:10px;
+  @apply text-xl;
+  @apply text-t_color_1;
+}
+div.sign-2{
+  display:block;
+}
 @font-face {
   font-family: 'Sarabun', sans-serif;
   src: url(https://github.com/mwalli1149/ranker-v6/blob/main/fonts/Sarabun-SemiBold.ttf);
