@@ -2,11 +2,13 @@
 "use client";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
 import React from "react";
 const SignUp = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const supabase = createClientComponentClient();
+  const router = useRouter()
   const handleSignUp = async (event) => {
     event.preventDefault();
     console.log("username-" + username + "\npassowrd-" + password);
@@ -17,6 +19,7 @@ const SignUp = () => {
         emailRedirectTo: `${location.origin}/api/auth/callback`,
       },
     });
+    router.push('/')
   };
 
   return (
