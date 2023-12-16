@@ -22,6 +22,9 @@ function Navbar() {
         <div className="pr-2">
           <Link href="/sign-up">Sign Up</Link>
         </div>
+        <div>
+          <Link href="/logout">out</Link>
+        </div>
       </div>
     </nav>
   );
