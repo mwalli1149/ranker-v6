@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         b_color_1: "#0047bb",//rochester blue
         b_color_2: "#C9C9C9 ",//grey 
-        b_color_3: "F3F3F3",//light grey
+        b_color_3: "#F3F3F3",//light grey
         t_color_1: "white",
         t_color_2: "#0047bb",//rochester blue
       }

@@ -1,19 +1,26 @@
 import React from "react";
 import Link from "next/link";
+import { Sarabun } from "next/font/google";
+const sarabun = Sarabun({ subsets: ["latin"], weight: "400" });
+
 function Navbar() {
   return (
-    <nav className="Navbar-1">
-      <div className="Navbar-2-1">
-        <div className="Navbar-3-1">
-          <Link href="/">RHS Course Ranker</Link>
-        </div>
+    <nav className="flex w-full h-[5vh] bg-b_color_2 items-center justify-between text-2xl">
+      {/*Things that allways show up*/}
+      {/*Home Button*/}
+      <div className="font-bold">
+        <Link href="/">RHS Course Ranker</Link>
       </div>
-      <div className="Navbar-2-2">
-        <div className="Navbar-3-2">
-          <Link href="/sign-in">Log in</Link>
+      {/*Only show up when not logged in*/}
+      {/*login and sign up buttons*/}
+      <div className="flex ">
+        {/* Sign In Button */}
+        <div className="pr-2">
+          <Link href="sign-in">Sign In</Link>
         </div>
-        <div className="Navbar-3-2">
-          <Link href="/sign-up">Sign up</Link>
+        {/* Sign Up Button */}
+        <div className="pr-2">
+          <Link href="/sign-up">Sign Up</Link>
         </div>
       </div>
     </nav>
