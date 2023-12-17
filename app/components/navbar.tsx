@@ -5,7 +5,7 @@ const sarabun = Sarabun({ subsets: ["latin"], weight: "400" });
 
 function Navbar() {
   return (
-    <nav className="flex w-full h-[5vh] bg-b_color_2 items-center justify-between text-2xl">
+    <div className="flex w-full h-[5vh] bg-b_color_2 items-center justify-between text-2xl">
       {/*Things that allways show up*/}
       {/*Home Button*/}
       <div className="font-bold">
@@ -16,17 +16,19 @@ function Navbar() {
       <div className="flex ">
         {/* Sign In Button */}
         <div className="pr-2">
-          <Link href="sign-in">Sign In</Link>
+          <Link href="login">Sign In</Link>
         </div>
         {/* Sign Up Button */}
         <div className="pr-2">
           <Link href="/sign-up">Sign Up</Link>
         </div>
         <div>
-          <Link href="/logout">out</Link>
+        <form action="/auth/logout" method="post">
+        <button formAction="/auth/logout">Sign Out</button>
+          </form>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
 
