@@ -1,9 +1,12 @@
 import React from "react";
+import  {useUser}  from "@supabase/auth-helpers-nextjs";
 import Link from "next/link";
 import { Sarabun } from "next/font/google";
 const sarabun = Sarabun({ subsets: ["latin"], weight: "400" });
 
 function Navbar() {
+  const user = true;
+  if(!user){
   return (
     <div className="flex w-full h-[5vh] bg-b_color_2 items-center justify-between text-2xl">
       {/*Things that allways show up*/}
@@ -15,6 +18,7 @@ function Navbar() {
       {/*login and sign up buttons*/}
       <div className="flex ">
         {/* Sign In Button */}
+        if(supabase==)
         <div className="pr-2">
           <Link href="login">Sign In</Link>
         </div>
@@ -30,6 +34,7 @@ function Navbar() {
       </div>
     </div>
   );
+  }
 }
 
 export default Navbar;
